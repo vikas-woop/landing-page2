@@ -9,6 +9,24 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1404129047906813');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1404129047906813&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
 </head>
 <body>
   <header class="site-header">
@@ -33,7 +51,7 @@
         </div>
 
         <p class="supporting-copy">Complete the 5-minute health check<br>and enter the WOOP Lucky Draw.</p>
-        <a class="cta" href="#health-check" data-cta>TAKE THE HEALTH CHECK <span aria-hidden="true">›</span></a>
+        <a class="cta" href="#health-check" data-cta data-pixel-label="Take the health Check">TAKE THE HEALTH CHECK <span aria-hidden="true">›</span></a>
         <p class="microcopy">Quick <i>•</i> Free <i>•</i> Takes less than 5 minutes</p>
       </div>
       <div class="hero-visual">
@@ -79,7 +97,7 @@
     </aside>
 
     <section id="health-check" class="final-action">
-      <a class="cta cta-wide" href="#" data-cta>START THE 5-MINUTE HEALTH CHECK <span aria-hidden="true">›</span></a>
+      <a class="cta cta-wide" href="#" data-cta data-pixel-label="Start the 5-minute health check">START THE 5-MINUTE HEALTH CHECK <span aria-hidden="true">›</span></a>
     </section>
   </main>
 

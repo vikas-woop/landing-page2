@@ -3,6 +3,13 @@ const HEALTH_CHECK_URL = "https://www.danone.in/iron-strong/?utm_source=whatapp&
 
 document.querySelectorAll("[data-cta]").forEach((button) => {
   button.href = HEALTH_CHECK_URL;
+  button.addEventListener("click", () => {
+    if (typeof fbq === "function") {
+      fbq("trackCustom", "HealthCheckCTAClick", {
+        cta_label: button.getAttribute("data-pixel-label"),
+      });
+    }
+  });
 });
 
 const menuButton = document.querySelector(".menu-button");
