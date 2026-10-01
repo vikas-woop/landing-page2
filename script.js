@@ -1,5 +1,5 @@
 // Replace this URL with the live health-check or survey link.
-const HEALTH_CHECK_URL = "https://www.danone.in/iron-strong/?utm_source=whatapp&utm_medium=woop3&utm_campaign=iron-strong";
+const HEALTH_CHECK_URL = "https://win.woopworldapp.com/10V_w";
 
 document.querySelectorAll("[data-cta]").forEach((button) => {
   button.href = HEALTH_CHECK_URL;
